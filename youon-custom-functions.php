@@ -10,16 +10,20 @@
 
 
 // Login logo redirection
+
 add_filter( 'login_headerurl', 'youon_login_logo_url' );
+
 function youon_login_logo_url() {
     return home_url();
 }
 
 
 // Customize the style of the login/registe page
-add_action( 'login_enqueue_scripts', 'youon_login_page' );
-function youon_login_page() { ?>
-    <style type="text/css">
+
+add_action( 'login_enqueue_scripts', 'youon_login_css' );
+
+function youon_login_css() { ?>
+    <style>
 		body {
 			background: #1C61D8 !important;
 		}
@@ -31,5 +35,16 @@ function youon_login_page() { ?>
 			background-repeat: no-repeat;
         	padding-bottom: 30px;
         }
+    </style>
+<?php }
+
+
+// Customize the style of the admin panel
+
+add_action( 'admin_head', 'youon_admin_css' );
+
+function youon_admin_css() { ?>
+    <style>
+        body {background-color: #DED51F; }
     </style>
 <?php }
