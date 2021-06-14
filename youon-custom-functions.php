@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name: YouOn Custom Functions
- * Plugin URI: http://www.mywebsite.com/my-first-plugin
+ * Plugin URI: https://github.com/NETBREDER/youon-custom-functions/
  * Description: Add custom styles and other functionality to the YouOn network of websites.
  * Version: 1.0
  * Author: YouOn
