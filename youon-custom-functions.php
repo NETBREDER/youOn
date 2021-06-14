@@ -28,7 +28,7 @@ function youon_login_css() { ?>
             background: #1C61D8 !important;
         }
         #login h1 a, .login h1 a {
-            background-image: url(https://ead.toquemaisbaixo.com.br/wp-content/uploads/2021/01/TMBX-LOGO.png);
+            background-image: url(https://youon.digital/wp-content/uploads/2021/06/youon-logo-purple-300.png);
             height:auto;
             width:182px;
             background-size: 100%;
