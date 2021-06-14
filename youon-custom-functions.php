@@ -10,7 +10,7 @@
 
 
 // Login logo redirection
-add_filter( 'login_headerurl', 'apprank_login_logo_url' );
+add_filter( 'login_headerurl', 'youon_login_logo_url' );
 function youon_login_logo_url() {
     return home_url();
 }
