@@ -45,8 +45,8 @@ add_action( 'admin_head', 'youon_admin_css' );
 
 function youon_admin_css() { ?>
     <style>
-        body {
-            background-color: #fff; 
+        #wp-admin-bar-wp-logo {
+            display: none;
         }
         #footer-left {
             display: none;
