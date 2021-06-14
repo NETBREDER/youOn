@@ -24,16 +24,16 @@ add_action( 'login_enqueue_scripts', 'youon_login_css' );
 
 function youon_login_css() { ?>
     <style>
-		body {
-			background: #1C61D8 !important;
-		}
+        body {
+            background: #1C61D8 !important;
+        }
         #login h1 a, .login h1 a {
             background-image: url(https://ead.toquemaisbaixo.com.br/wp-content/uploads/2021/01/TMBX-LOGO.png);
-			height:auto;
-			width:182px;
-			background-size: 100%;
-			background-repeat: no-repeat;
-        	padding-bottom: 30px;
+            height:auto;
+            width:182px;
+            background-size: 100%;
+            background-repeat: no-repeat;
+            padding-bottom: 30px;
         }
     </style>
 <?php }
@@ -45,6 +45,11 @@ add_action( 'admin_head', 'youon_admin_css' );
 
 function youon_admin_css() { ?>
     <style>
-        body {background-color: #DED51F; }
+        body {
+            background-color: #fff; 
+        }
+        #footer-left {
+            display: none;
+        }
     </style>
 <?php }
