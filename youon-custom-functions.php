@@ -11,11 +11,12 @@
 
 // Login logo redirection
 
-add_filter( 'login_headerurl', 'youon_login_logo_url' );
+add_filter( 'login_headerurl', 'youon_loginlogo_url' );
 
-function youon_login_logo_url() {
-    return home_url();
+function youon_loginlogo_url($url) {
+    return 'https://youon.digital';
 }
+
 
 
 // Customize the style of the login/registe page
@@ -24,13 +25,10 @@ add_action( 'login_enqueue_scripts', 'youon_login_css' );
 
 function youon_login_css() { ?>
     <style>
-        body {
-            background: #1C61D8 !important;
-        }
         #login h1 a, .login h1 a {
             background-image: url(https://youon.digital/wp-content/uploads/2021/06/youon-logo-purple-300.png);
             height:auto;
-            width:182px;
+            width:161px;
             background-size: 100%;
             background-repeat: no-repeat;
             padding-bottom: 30px;
