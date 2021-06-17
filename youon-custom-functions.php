@@ -42,7 +42,7 @@ add_action( 'admin_head', 'youon_admin_css' );
 
 function youon_admin_css() { ?>
     <style>
-        #wp-admin-bar-wp-logo {
+        li#wp-admin-bar-wp-logo {
             display: none;
         }
         #footer-left {
