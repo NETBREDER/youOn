@@ -50,3 +50,20 @@ function youon_admin_css() { ?>
         }
     </style>
 <?php }
+
+
+// Add Google Analytics code to the entire network
+
+add_action('wp_head', 'youon_googleanalytics');
+
+function youon_googleanalytics() { ?>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-98304873-3"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-98304873-3');
+    </script>
+<?php } ?>
