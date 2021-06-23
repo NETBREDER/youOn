@@ -23,7 +23,7 @@ function youon_googleanalytics() { ?>
 
         gtag('config', 'UA-98304873-3');
     </script>
-<?php } ?>
+<?php }
 
 
 // Login logo redirection
