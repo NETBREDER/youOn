@@ -25,7 +25,7 @@ add_action( 'login_enqueue_scripts', 'youon_login_css' );
 function youon_login_css() { ?>
     <style>
         body {
-            background: linear-gradient(to right, #cd2970 0%, #e96140 100%) !important;
+            background: linear-gradient(90deg,rgb(150,71,228) 0%,rgb(233,97,64) 100%) !important;
         }
         #login h1 a, .login h1 a {
             background-image: url(https://youon.digital/wp-content/uploads/2021/07/logo-voceonline-by-apprank-white.png);
